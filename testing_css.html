@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Demo</title>
+  <style>
+    body {
+      background-color: black;
+      padding: 20px;
+    }
+
+    .container {
+  display: flex;
+  border: 2px solid white;
+  margin: 10px;
+  width: 250px;
+  height: 150px;
+}
+
+.item {
+  background: aqua;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  margin: 5px;
+}
+
+
+
+
+
+
+    /* Try toggling these one at a time */
+    .container.row { flex-direction: row; }          /* default: items in a row */
+    .container.column { flex-direction: column; } 
+    .container.align{align-items: center;}   /* stack items vertically */
+    .container.center { justify-content: center; }   /* center items horizontally */
+    .container.space { justify-content: space-between; } /* spread items out */
+    .container.wrap { flex-wrap: wrap; }             /* allow items to wrap */
+  </style>
+</head>
+<body>
+  <div class="container row">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+  </div>
+  <div class="container row-wrap">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item">4</div>
+  <div class="item">5</div>
+  <div class="item">6</div>
+</div>
+
+<div class="container column-wrap">
+  <div class="item">A</div>
+  <div class="item">B</div>
+  <div class="item">C</div>
+  <div class="item">D</div>
+  <div class="item">E</div>
+  <div class="item">F</div>
+</div>
+
+</body>
+</html>
