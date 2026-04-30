@@ -1,4 +1,7 @@
+HEAD
 # Secure Market Sentinel v2.0
+# market-sentinel
+7c8830381353733fc87a4a910e41d822058a1826
 A full-stack financial infrastructure tool for high-impact news surveillance.
 
 ## Architecture
@@ -9,4 +12,6 @@ A full-stack financial infrastructure tool for high-impact news surveillance.
 ## Setup
 1. `pip install httpx`
 2. `npm install`
+HEAD
 3. `node server.js`
+3. `node server.js` 7c8830381353733fc87a4a910e41d822058a1826
